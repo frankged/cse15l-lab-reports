@@ -26,4 +26,18 @@ If successful your terminal should show:
 
 ---
 ## Trying Some Commands
-
+Here are some basic commands:
+* `cd` 
+  - changes directory, ex(`cd path` will change your current directory to `~/path`, assuming path is a directory within your previous working directory)
+* `ls`
+  - prints all of the items in your current directory
+* pwd
+  - prints the path of your working directory
+* mkdir
+  - makes a new directory, ex(`mkdir orange` will make a new directory called 'orange' in your current directory)
+* cp
+  - copies file/directory to another directory, ex(`cp hello.txt ~/folder/blue` will copy `hello.txt`, assuming the file exists to `~/folder/blue`)
+* exit
+  - exits the ssh
+  - should look like this:
+<img width="337" alt="Screen Shot 2023-01-15 at 3 38 49 PM" src="https://user-images.githubusercontent.com/97646090/212573804-aa55f883-98ff-43a6-b95d-3a5066eea431.png">
