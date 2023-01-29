@@ -6,7 +6,10 @@
 
 2. **Click** and **download** the appropriate version for your device
 3. **Follow** the install wizard to **complete** the setup
-4. Congrats! You now have VSCode installed!
+4. Once installed, opening a window should look like this:
+<img width="1019" alt="Screen Shot 2023-01-29 at 10 03 38 AM" src="https://user-images.githubusercontent.com/97646090/215346307-0e66a968-330a-4a80-b960-c648ae32e56d.png">
+
+5. Congrats! You now have VSCode installed!
 
 ---
 ## Remotely Connecting
@@ -28,16 +31,20 @@ If successful your terminal should show: <br />
 ## Trying Some Commands
 Here are some basic commands:
 * `cd` 
-  - changes directory, ex(`cd path` will change your current directory to `~/path`, assuming path is a directory within your previous working directory)
+  - changes directory, ex(`cd path` will change your current directory to `./path`, assuming path is a directory within your previous working directory)
 * `ls`
   - prints all of the items in your current directory
 * pwd
   - prints the path of your working directory
 * mkdir
   - makes a new directory, ex(`mkdir orange` will make a new directory called 'orange' in your current directory)
+<img width="447" alt="Screen Shot 2023-01-29 at 9 59 58 AM" src="https://user-images.githubusercontent.com/97646090/215346156-5909fad0-11a5-43f7-89e0-c6477ab6b31b.png">
+
 * cp
   - copies file/directory to another directory, ex(`cp hello.txt ~/folder/blue` will copy `hello.txt`, assuming the file exists to `~/folder/blue`)
+ <img width="429" alt="Screen Shot 2023-01-29 at 10 01 47 AM" src="https://user-images.githubusercontent.com/97646090/215346238-186ee016-e9b4-4282-a89a-32cb290cc872.png">
 * exit
   - exits the ssh
   - should look like this: <br />
 <img width="337" alt="Screen Shot 2023-01-15 at 3 38 49 PM" src="https://user-images.githubusercontent.com/97646090/212573804-aa55f883-98ff-43a6-b95d-3a5066eea431.png">
+
