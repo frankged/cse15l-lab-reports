@@ -1,4 +1,5 @@
 # Lab Report #2
+## Part 1
 ### StringServer.java
 ```
 import java.io.IOException;
@@ -45,3 +46,52 @@ public class StringServer {
 * Calls the handleRequest method
 * Argument is "http://localhost:4000/add-message?=loop" and the local field strings is ["loop","de"]
 * Changes the strings field by adding the string "loop" to it
+
+## Part 2
+Induces Failure:
+```
+  @Test 
+	public void testReverseInPlaceFails() {
+    int[] input1 = {1,2,3,4,5,6};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{6,5,4,3,2,1}, input1);
+	}
+```
+Doesn't Induce Failure:
+```
+   @Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+```
+Symptom:
+The test that Induced Failure returned with the following messange:
+<img width="571" alt="Screen Shot 2023-01-29 at 5 52 42 PM" src="https://user-images.githubusercontent.com/97646090/215371394-acdc098a-160d-49e3-9a6d-f725a96dae5b.png">
+
+Before:
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+After:
+```
+  static void reverseInPlace(int[] arr) {
+    int[] reverse = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      reverse[i] = arr[arr.length - i - 1];
+    }
+    for (int i = 0; i < reverse.length; i++){
+      arr[i] = reverse[i];
+    }
+  }
+```
+Why the changes fixed the problem: <br />
+The bug in the before code was that `arr` was being overwritten in the middle of the program. So, to fix this, we make a new array object so as to not overwrite `arr`.
+
+## Part 3
+In lab 2 I learned how to set up a server in java, how you need specific port numbers, and how you can use a url as an argument.
