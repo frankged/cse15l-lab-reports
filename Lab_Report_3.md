@@ -56,7 +56,7 @@ The sightseeing you remember best might be the lively free market lining the hun
 ./written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
 ./written_2/travel_guides/berlitz2/China-WhereToGo.txt  
 `grep -r -l "boom" ./written_2`  
-<m style="font-size:5">./written_2/non-fiction/OUP/Berk/ch1.txt
+./written_2/non-fiction/OUP/Berk/ch1.txt
 ./written_2/non-fiction/OUP/Abernathy/ch3.txt
 ./written_2/non-fiction/OUP/Abernathy/ch1.txt
 ./written_2/non-fiction/OUP/Abernathy/ch6.txt
@@ -102,8 +102,12 @@ The sightseeing you remember best might be the lively free market lining the hun
 ./written_2/travel_guides/berlitz2/Nepal-WhatToDo.txt
 ./written_2/travel_guides/berlitz2/Bahamas-History.txt
 ./written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt
-./written_2/travel_guides/berlitz2/Cancun-WhereToGo.txt</m>
+./written_2/travel_guides/berlitz2/Cancun-WhereToGo.txt
 
 
 
 ### Utility
+* With how long the output of the last example is, it is easy to see how if each instance of "boom" had resulted multiple lines of text, it would be wholly unreadable.
+* This command is similar in essence to `grep -A` because it seeks to make the result more navigable to the user.
+* I think that this command is best paired with the `grep -r` because you need to be searching many different files and directories in order for there to be enough output such that you would only like to see the file names. 
+
