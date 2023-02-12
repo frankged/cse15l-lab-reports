@@ -46,6 +46,7 @@ The sightseeing you remember best might be the lively free market lining the hun
 ---
 
 ## `grep -l`, `grep --files-with-matches`
+From `man grep`:
 ```
   -l, --files-with-matches
              Only the names of files containing selected lines are written to standard output.  grep
@@ -116,3 +117,26 @@ The sightseeing you remember best might be the lively free market lining the hun
 
 ---
 
+## `grep -w`
+From `man grep`:
+```
+     -w, --word-regexp
+             The expression is searched for as a word (as if surrounded by ‘[[:<:]]’ and ‘[[:>:]]’;
+             see re_format(7)).  This option has no effect if -x is also specified.
+```
+
+### Examples  
+`grep -r -l -w "boo" ./written_2`
+**Result:**  
+This returns nothing. 
+* Contrast this with the above result for `grep -r -l "boom" ./written_2`. Without `-w`, searching for "boo" would have returned every instance of "boom" as well. 
+
+`grep -r -w "mod" ./written_2`
+**Result:**  
+"./written_2/travel_guides/berlitz1/HistoryIstanbul.txt:        single-handedly created the mod-ern Turkish state. He was enormously"
+* While mod-ern is not precisely "mod" it is a vast improvement over the **203** lines that return when running `grep -r -l "mod" ./written_2` (whose closest string to "mod" was "mod-ern" anyway).
+
+
+
+### Utility
+* When using `grep`, especially when using `grep` on text files, it is easy to search for a word and get returned values that are not that word, but that contain the word inside. Ex) "too" -> "platoon". The `-w` modifier changes this such that you are guaranteed that you are only returned the exact word you were searching for.
