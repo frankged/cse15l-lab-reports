@@ -10,16 +10,19 @@ From `man grep` found:
 `grep -r "cabbage" ./written_2`  
 **Result:**  
 ./written_2/travel_guides/berlitz2/Canada-WhereToGo.txt:Stop off at Shannon Falls, a short walk away from the road on an easy gravel path over footbridges into the forest. You can picnic at the bottom of the cliff over which the water cascades. Famous for its August log-rolling contests, the town of Squamish makes a useful base for hiking tours into Garibaldi Provincial Park. The winter sports resort of Whistler offers excellent summer facilities, too: bicycles, kayak and river-rafting or more sedate swimming, golf, and tennis. Take the ski-lift for views across the Coastal Mountains or stroll around Lost Lake — good trout-fishing — but beware of a pretty yellow flower known as skunk cabbage that smells like its name when you pick it.
-./written_2/travel_guides/berlitz2/China-WhereToGo.txt:The sightseeing you remember best might be the lively free market lining the hundreds of steps that descend higgledy-piggledy from the hills of central Chongqing to the river. Hustling, bustling peasants hawk the rich harvest of the surrounding farming country: cabbages and oranges, eggs and live chickens (they are weighed while flapping), river fish and squirming eels, and table after table of the most fragrant spices, while stalls and hole-in-the-wall cafés heat up the city’s number-one dish, the Sichuan hotpot.  
+./written_2/travel_guides/berlitz2/China-WhereToGo.txt:The sightseeing you remember best might be the lively free market lining the hundreds of steps that descend higgledy-piggledy from the hills of central Chongqing to the river. Hustling, bustling peasants hawk the rich harvest of the surrounding farming country: cabbages and oranges, eggs and live chickens (they are weighed while flapping), river fish and squirming eels, and table after table of the most fragrant spices, while stalls and hole-in-the-wall cafés heat up the city’s number-one dish, the Sichuan hotpot.
+
+
 `grep -r "higgledy-piggledy" ./written_2`  
 **Result:**  
 ./written_2/travel_guides/berlitz2/China-WhereToGo.txt:The sightseeing you remember best might be the lively free market lining the hundreds of steps that descend higgledy-piggledy from the hills of central Chongqing to the river. Hustling, bustling peasants hawk the rich harvest of the surrounding farming country: cabbages and oranges, eggs and live chickens (they are weighed while flapping), river fish and squirming eels, and table after table of the most fragrant spices, while stalls and hole-in-the-wall cafés heat up the city’s number-one dish, the Sichuan hotpot.
+
 
 ### Utility
 * This command is useful because it removes the need for the user to use `find ./ > someFile.txt` and then `grep <string> someFile.txt`, rather it searches recursively from the single command.
 * Note for utilizing this is that since it utilizes recursion, running `grep -r` far upstream may be unadvisable due to the vast numbers of sub-directories that may exist.  
 
-
+---
 
 ## `grep -A [num]`
 From `man grep`:
@@ -40,7 +43,7 @@ The sightseeing you remember best might be the lively free market lining the hun
 ### Utility
 * The main utility of this command is to give the user control over the amount of "context" that he/she gets after the instance of the found pattern.
 
-
+---
 
 ## `grep -l`, `grep --files-with-matches`
 ```
@@ -110,4 +113,6 @@ The sightseeing you remember best might be the lively free market lining the hun
 * With how long the output of the last example is, it is easy to see how if each instance of "boom" had resulted multiple lines of text, it would be wholly unreadable.
 * This command is similar in essence to `grep -A` because it seeks to make the result more navigable to the user.
 * I think that this command is best paired with the `grep -r` because you need to be searching many different files and directories in order for there to be enough output such that you would only like to see the file names. 
+
+---
 
