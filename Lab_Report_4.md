@@ -17,7 +17,8 @@ Step 2:
 Step 4:  
 <img width="696" alt="Screen Shot 2023-02-24 at 12 22 14 AM" src="https://user-images.githubusercontent.com/97646090/221128624-22a78acd-c596-491b-89f8-85c16be55320.png">
 
-Steps 5-9: 
+Steps 5-9:  
+
 <img width="795" alt="Screen Shot 2023-02-24 at 12 30 22 AM" src="https://user-images.githubusercontent.com/97646090/221130220-57e10445-5211-4ccd-9a73-1d9780928cfa.png">
   
 Let it be noted that as of the current moment, the above code block will not work due to the names of the Lab 7 files being changed. However, this issue has the simple fix of changing each instance of "TestListExamples" to "ListExamplesTests".
