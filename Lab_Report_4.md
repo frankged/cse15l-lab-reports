@@ -26,7 +26,7 @@ This new "updated" version with the correct file names works great!
 ```
 git clone git@github.com:frankged/lab7.git; cd lab7/; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests; sed -i '43s/.*/index2 += 1;/' ListExamples.java; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests; git add ListExamples.java; git commit -m “done”;git push
 ```
-`<enter`
+`<enter>`  
 <img width="735" alt="Screen Shot 2023-02-24 at 12 40 44 AM" src="https://user-images.githubusercontent.com/97646090/221132324-cb4bcb8f-30f2-428a-a02e-e35f7845e978.png">
   
 This is the expected output from the code block complete with steps 5-9.
@@ -34,42 +34,45 @@ This is the expected output from the code block complete with steps 5-9.
 ### Breakdown 
 
 Step 5:  
-`git clone git@github.com:frankged/lab7.git` `<enter>`
+`git clone git@github.com:frankged/lab7.git`   
+`<enter>`  
 <img width="528" alt="Screen Shot 2023-03-11 at 11 44 43 AM" src="https://user-images.githubusercontent.com/97646090/224508523-e25dc413-5ba9-44a8-9bd2-f44d94685412.png">  
 
-Step 6:
+Step 6:  
 `cd lab7/`  
-`<enter`
+`<enter>`  
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`  
-`<enter`
+`<enter>`  
 `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`  
-`<enter`
+`<enter>`  
+  
+  
 
 <img width="730" alt="Screen Shot 2023-03-11 at 11 48 01 AM" src="https://user-images.githubusercontent.com/97646090/224508659-bf6f5e26-07de-435b-b873-75e2fe9c5662.png">  
 
-Step 7:  
+Step 7:    
 <img width="259" alt="Screen Shot 2023-03-11 at 11 50 50 AM" src="https://user-images.githubusercontent.com/97646090/224508783-4270df6a-2fa6-4af2-8694-022d5eaf89d8.png">
 
 `sed -i '43s/.*/index2 += 1;/' ListExamples.java`
-`<enter`
+`<enter>`  
 
 <img width="262" alt="Screen Shot 2023-03-11 at 11 51 35 AM" src="https://user-images.githubusercontent.com/97646090/224508817-162ccea8-e07a-4970-88e4-93a96bef445b.png">  
 
 Step 8:  
 
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
-`<enter`
+`<enter>`
 
 
 <img width="733" alt="Screen Shot 2023-03-11 at 11 53 37 AM" src="https://user-images.githubusercontent.com/97646090/224508886-c441f153-ec17-4909-9568-d45eabc946d0.png">
 
-Step 9:
+Step 9:  
 `git add ListExamples.java`  
-`<enter`  
+`<enter>`  
 `git commit -m “done”`  
-`<enter`  
+`<enter>`  
 `git push`  
-`<enter`  
+`<enter>`  
 
 <img width="521" alt="Screen Shot 2023-03-11 at 11 58 07 AM" src="https://user-images.githubusercontent.com/97646090/224509069-340050cd-c92e-4319-abf8-1fdcd959f954.png">
 
