@@ -51,7 +51,7 @@ Step 6:
 `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`  
 `<enter>`  
   
-Runnin these compiles and runs the JUnit tests.  
+Running these compiles and runs the JUnit tests.  
 
 
 <img width="730" alt="Screen Shot 2023-03-11 at 11 48 01 AM" src="https://user-images.githubusercontent.com/97646090/224508659-bf6f5e26-07de-435b-b873-75e2fe9c5662.png">  
