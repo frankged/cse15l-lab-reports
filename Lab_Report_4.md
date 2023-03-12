@@ -36,7 +36,12 @@ This is the expected output from the code block complete with steps 5-9.
 Step 5:  
 `git clone git@github.com:frankged/lab7.git`   
 `<enter>`  
+This clones the repository into the working directory. 
+
 <img width="528" alt="Screen Shot 2023-03-11 at 11 44 43 AM" src="https://user-images.githubusercontent.com/97646090/224508523-e25dc413-5ba9-44a8-9bd2-f44d94685412.png">  
+
+
+
 
 Step 6:  
 `cd lab7/`  
@@ -46,7 +51,8 @@ Step 6:
 `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`  
 `<enter>`  
   
-  
+Runnin these compiles and runs the JUnit tests.  
+
 
 <img width="730" alt="Screen Shot 2023-03-11 at 11 48 01 AM" src="https://user-images.githubusercontent.com/97646090/224508659-bf6f5e26-07de-435b-b873-75e2fe9c5662.png">  
 
@@ -55,6 +61,8 @@ Step 7:
 
 `sed -i '43s/.*/index2 += 1;/' ListExamples.java`
 `<enter>`  
+  
+This edits the specified file from the command line, replacing line 43.
 
 <img width="262" alt="Screen Shot 2023-03-11 at 11 51 35 AM" src="https://user-images.githubusercontent.com/97646090/224508817-162ccea8-e07a-4970-88e4-93a96bef445b.png">  
 
@@ -62,6 +70,8 @@ Step 8:
 
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 `<enter>`
+  
+Re-compiling and running JUnit tests.
 
 
 <img width="733" alt="Screen Shot 2023-03-11 at 11 53 37 AM" src="https://user-images.githubusercontent.com/97646090/224508886-c441f153-ec17-4909-9568-d45eabc946d0.png">
@@ -73,6 +83,8 @@ Step 9:
 `<enter>`  
 `git push`  
 `<enter>`  
+  
+Adds the file to list of items to commit, commits the changes locally, then pushes to the repository on github.
 
 <img width="521" alt="Screen Shot 2023-03-11 at 11 58 07 AM" src="https://user-images.githubusercontent.com/97646090/224509069-340050cd-c92e-4319-abf8-1fdcd959f954.png">
 
